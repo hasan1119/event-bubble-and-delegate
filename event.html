@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <button id="btn">Click</button> -->
+    <!-- // TODO: 1. Event -->
+
+    <section id="section" class="bg-info m-3">
+        <div id="div" class="bg-warning m-4">
+            <ul id="ul" class="bg-primary m-4">
+                <li id="first-li" class="bg-success m-4">List 1</li> <!-- // TODO: 2. Event bubble -->
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        // // li
+        // document.getElementById('first-li').addEventListener('click', function (e) {
+        //     // e.stopPropagation()
+        //     // console.log('li first event clicked');
+        //     console.log(e.y);
+        //     if (e.clientY < 30) {
+        //         document.body.style.background = 'red'
+        //     } else if (e.y > 30) {
+        //         document.body.style.background = 'pink'
+        //     }
+        // })
+
+        // // li
+        // document.getElementById('first-li').addEventListener('click', function (e) {
+        //     e.stopPropagation()
+        //     e.stopImmediatePropagation()
+        //     console.log('li second event clicked');
+        // }) 
+
+        // // li
+        // document.getElementById('first-li').addEventListener('click', function (e) {
+        //     e.stopPropagation()
+        //     console.log('li third event clicked');
+        // }) 
+
+        // li 2
+        // document.getElementById('first-li').addEventListener('click', function () {
+        //     // b.stopPropagation()
+        //     console.log(document.getElementById('first-li').innerText);
+
+        // })     
+        //    document.getElementById('first-li2').addEventListener('click', function () {
+        //     // b.stopPropagation()
+        //     console.log(document.getElementById('first-li2').innerText);
+
+        // })
+        // ul
+        // document.getElementById('ul').addEventListener('click', () => {
+        //     //   console.log(  document.getElementById('ul').childNodes);
+        //     console.log('ul clicked');
+        // })
+
+        // div
+        // document.getElementById('div').addEventListener('click', () => {
+        //     console.log('div clicked');
+        // })
+
+        // // section
+        // document.getElementById('section').addEventListener('click', () => {
+        //     console.log('section clicked');
+        // })
+
+
+
+
+
+
+
+
+
+        //         function abc() {
+        //             console.log('hasan');
+        //         }
+
+
+
+
+
+
+
+
+        // //=================================================
+        //         var pointerEvent = {
+        //             name: "Hasan",
+        //             age: 21,
+        //            isMarried : false
+        //         }
+
+        //         // console.log(x.name);
+
+
+
+        //         abc(pointerEvent)
+
+
+
+        // document.getElementById('btn').addEventListener('click', function () {
+        //     document.body.style.background = 'red'
+        // })
+        // document.getElementById('btn').addEventListener('dblclick', function () {
+        //     document.body.style.background = 'white'
+        // })
+
+    </script>
+</body>
+
+</html>

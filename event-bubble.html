@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-success" id="list-container">
+        <h2>lists:</h2>
+        <ul class="bg-warning" id="lists">
+            <li id="first" class="item bg-info">list-1</li>
+            <li class="item">list-2</li>
+            <li class="item">list-3</li>
+            <li class="item">list-4</li>
+        </ul>
+    </div>
+    <script>
+        // document.getElementById('lists').addEventListener('click', (event)=>{
+        //     console.log("ul clicked");
+            
+        // })
+        // document.getElementById('first').addEventListener('click', (event)=>{
+        //     console.log("li clicked");
+
+           
+        // })
+        document.getElementById('list-container').addEventListener('click', (event)=>{
+            console.log("div clicked");
+            console.log(event.target.remove());
+        })
+    </script>
+</body>
+</html>
